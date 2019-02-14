@@ -5,4 +5,4 @@ This repository contains some examples of implementation often found components 
 ## Contents
 
 1. Form elements
-   1. [Input](/component/form/input/input.md)
+   1.1 [Input](/component/form/input/input.md)
