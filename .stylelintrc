@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint-config-lovata/.stylelintrc.yml"],
+  "rules": {
+    "declaration-property-value-whitelist": null,
+    "declaration-property-value-blacklist": null
+  }
+}
