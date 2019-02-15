@@ -14,4 +14,7 @@ This repository contains some examples of implementation often found components 
 2. Navigation
    1. [Breadcrumbs(+schema.org)](/components/navigation/breadcrumbs)
    2. [Pagination](/components/navigation/pagination)
+3. Article
+   1. [Article card(+schema.org)](/components/article/article-card)
+   2. [Article page(+schema.org)](/components/article/article-page)
   
