@@ -1,0 +1,19 @@
+<div class="radio {{ wrapperClass }} ">
+    <input type="radio"
+           class="radio__field {{ inputClass }}"
+           id="{{ id }}"
+           {% if name is not same as(null) %}
+                name="{{ name }}"
+           {% endif %}
+           {% if value is not same as(null) %}
+                value="{{ value }}"
+           {% endif %}
+           {% if checked == true %}
+               checked
+           {% endif %}
+           {% if disabled == true %}
+               disabled
+           {% endif %}
+    >
+    <label for="{{ id }}" class="radio__label {{ labelClass }}">{{ labelText }}</label>
+</div>

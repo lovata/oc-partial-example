@@ -1,0 +1,19 @@
+.input {
+  position: relative;
+  width: 100%;
+}
+
+.input__label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.input__field {
+  appearance: none;
+}
+
+.input__label_elevated {
+  top: -50%;
+  transition: top 0.2s ease-out;
+}

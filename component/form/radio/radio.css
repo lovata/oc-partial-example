@@ -1,0 +1,79 @@
+.radio {
+  position: relative;
+}
+
+/* Don`t use 'display: none' on input[type=radio] or input[type=checkbox].
+This makes it impossible for you to focus on input and label. */
+
+.radio__field {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin-left: -1px;
+}
+
+.radio__label {
+  position: relative;
+  font-weight: 600;
+  color: #b9b5b5;
+  padding-left: 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid var(--color-black, #000000);
+    border-radius: 50%;
+  }
+}
+
+.radio__field:focus + .radio__label {
+  outline: 2px solid #0000ff;
+  outline-offset: 2px;
+}
+
+.radio__field:checked + .radio__label {
+  color: var(--color-black, #000000);
+  transition: color 0.2s ease-out;
+
+  &::before {
+    opacity: 1;
+    background-color: var(--color-black, #000000);
+    transition: opacity 0.2s ease-out;
+  }
+}
+
+.radio__field:disabled + .radio__label {
+  color: var(--color-gray, #b9b5b5);
+
+  &::before {
+    opacity: 1;
+    border-color: var(--color-gray, #b9b5b5);
+    background-color: var(--color-gray, #b9b5b5);
+  }
+}
+
+/* stylelint-disable selector-max-specificity */
+
+.radio__field:checked:disabled + .radio__label {
+  color: var(--color-gray, #b9b5b5);
+
+  &::before {
+    opacity: 1;
+    border-color: var(--color-gray, #b9b5b5);
+    background-color: var(--color-gray, #b9b5b5);
+  }
+}
+
+/* stylelint-enable */
