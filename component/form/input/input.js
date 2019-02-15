@@ -2,7 +2,7 @@ export default new class Input {
   constructor() {
     this.inputWrapSelector = 'input';
     this.inputFieldSelector = 'input__field';
-    this.inputLabelSelector = 'input__label'; 
+    this.inputLabelSelector = 'input__label';
     this.inputLabelElevatedSelector = 'input__label_elevated';
 
     this.handler();
@@ -25,15 +25,11 @@ export default new class Input {
 
   static checkInputFillState(input) {
     const value = $(input).val().trim();
-    const state = value.length > 0;
-
-    return state;
+    return value.length > 0;
   }
 
   findLabel(input) {
-    const label = $(input).siblings(`.${this.inputLabelSelector}`);
-
-    return label;
+    return $(input).siblings(`.${this.inputLabelSelector}`);
   }
 
   labelUp(input) {
