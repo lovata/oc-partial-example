@@ -3,6 +3,29 @@
 <div class="news-page" itemscope itemtype="http://schema.org/NewsArticle">
     <link href="{{ ''|page }}" itemprop="url">
     <meta content="{{ title }}" itemprop="headline">
+
+    {# This section is Google requirement #}
+    <meta content="https://bit.ly/2BCKhRf" itemprop="image">
+    <div itemtype="https://schema.org/Organization" itemscope="itemscope" itemprop="publisher">
+        <link itemprop="url" href="lovata.com">
+        {# But if you need support Google you should add more fields for Yandex. Its amazing  #}
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">
+                Address
+            </span>
+            <span itemprop="addressLocality">Seattle</span>,
+            <span itemprop="addressRegion">WA</span>
+            <span itemprop="postalCode">98052</span>
+        </div>
+        <meta itemprop="telephone" content="128500">
+        <span itemprop="name">Lovata</span>
+        <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <link itemprop="image" href="path/to/logo">
+            <link itemprop="url" href="path/to/logo">
+        </span>
+    </div>
+    {# end section #}
+
     <meta itemprop="author" itemprop="name" content="{{ author }}" itemtype="http://schema.org/Organization" >
     <time itemprop="datePublished" class="news-page__date" datetime='2018-12-28T11:45:00+03:00'>October 11, 2018</time>
     <div class="wysiwyg article-page__wysiwyg" itemprop="articleBody">
