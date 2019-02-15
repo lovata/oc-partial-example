@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint:js": "./node_modules/.bin/eslint ./**/*.js --fix",
-    "lint:css": "./node_modules/.bin/stylelint ./**/*.css --fix"
+    "lint:css": "./node_modules/.bin/stylelint ./**/*.css --fix",
+    "ci:lint:js": "./node_modules/.bin/eslint ./**/*.js",
+    "ci:lint:css": "./node_modules/.bin/stylelint ./**/*.css"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,9 @@
   "homepage": "https://github.com/lovata/oc-partial-example#readme",
   "devDependencies": {
     "eslint-config-lovata": "^1.7.1"
+  },
+  "dependencies": {
+    "eslint": "^5.13.0",
+    "stylelint": "^9.10.1"
   }
 }
