@@ -17,4 +17,5 @@ This repository contains some examples of implementation often found components 
 3. Article
    1. [Article card(+schema.org)](/components/article/article-card)
    2. [Article page(+schema.org)](/components/article/article-page)
+
   
