@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+  - "10.15"
 # dist: trusty
 # addons:
 #   sonarcloud:
@@ -8,5 +10,5 @@ language: node_js
 
 script:
 # - sonar-scanner
-  - npm run lint:css
-  - npm run lint:js
+  - npm run ci:lint:css
+  - npm run ci:lint:js
