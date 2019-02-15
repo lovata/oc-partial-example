@@ -1,0 +1,27 @@
+{
+  "name": "oc-partial-example",
+  "version": "0.0.1",
+  "description": "List of partials` examples for development under OctoberCMS",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "./node_modules/.bin/eslint ./**/*.js --fix",
+    "lint:css": "./node_modules/.bin/stylelint ./**/*.css --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovata/oc-partial-example.git"
+  },
+  "keywords": [
+    "OctoberCMS",
+    "lovata"
+  ],
+  "author": "LOVATA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lovata/oc-partial-example/issues"
+  },
+  "homepage": "https://github.com/lovata/oc-partial-example#readme",
+  "devDependencies": {
+    "eslint-config-lovata": "^1.7.1"
+  }
+}
