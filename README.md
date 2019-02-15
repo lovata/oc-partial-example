@@ -1,4 +1,4 @@
-# OC-partial-example
+# OC-partial-example [![Build Status](https://travis-ci.com/lovata/oc-partial-example.svg?branch=master)](https://travis-ci.com/lovata/oc-partial-example)
 
 This repository contains some examples of implementation often found components for development under OctoberCMS.
 
