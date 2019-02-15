@@ -8,5 +8,5 @@ This repository contains some examples of implementation often found components 
    +  [Input](component/form/input/input.md)
    +  [Radio/Checkbox](component/form/radio/radio.md)
    +  [Button](component/form/button/button.md)
-   +  [Validation](component/form/validation/validation.md)
+   +  [Validation](component/form/validation)
   
