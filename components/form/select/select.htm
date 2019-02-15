@@ -1,0 +1,13 @@
+<div class="form__select {{ wrapperClass }}">
+    {% if labelText is not empty %}
+        <label for="{{ id }}" class="form__select-label">{{ labelText }}</label>
+    {% endif %}
+    <select
+            id="{{ id }}"
+            class="form__select-dropdown {{ selectClass }}"
+            name="{{ selectName }}">
+        {% for item in arOptions %}
+            <option class="form__select-dropdown-option" value="{{ item.value }}">{{ item.text }}</option>
+        {% endfor %}
+    </select>
+</div>
