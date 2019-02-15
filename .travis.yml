@@ -1,4 +1,4 @@
-# language: node_js
+language: node_js
 # dist: trusty
 # addons:
 #   sonarcloud:
@@ -6,5 +6,7 @@
 #     token:
 #       secure: d4xim5b1wJI95H2brj3ijawkVQXNIf1t6jgLSjXH9/yvnugfMW07vC7wkaizRSnbLCQvoYaKc5FdYLnpzLwLU1FsUB09+RfK0wgjkgc4ixYewps8VsaR3ycRDi4s2D7U9lPg2ZhYecUIPfJ/+1gAy8185wmQ2efi7O5HMYjthY9NlyZupgVGYPkL/aKeD0K3TMHbObWkAVhC2CzLPr/gOxvGsAkSk2f7PZRrZcfR/Ni5ZcFxdKwQyXy3NzqKV62xns8LO2St8KqeDS5iORGl+AUVBAAIxH9JNcrJNX/XnIqsa0Vc/NpAQkXJsgkdU/43Fk1oGnRnu1qoTaq0geOtbF6ZJESMYoXnS45baiGUFzlWFJT9qklHgNZFmfdCenBOBqNjBoTyCLGBpT8D8lFp9tQWsT6fHDPfJkhoyeeLD0BWDEHqqmiaE35niTmedy6FjBuY4fKYNgJbGc0bcb792kuemKTOtNQsuZlsdIlmQ2IPR0JfmU9JkAL1QaHDSGtvUw/ahF/cpoWFhDSzLgveO7GIDMuduGcKTOIdyT1vEKXB+IyNM0O/+Z7HGxpOB64fGB8JzV5ngXj7HkqIW7NrLlT1CzatcWpGinNyH4n7lys9oKA7Eb/RxIrpY6tZFzbrq8UG2cpT51ZYy/0CnW6EVw9/+N0+j+4qHWOlUNyafB8=
 
-# script:
+script:
 # - sonar-scanner
+  - npm run lint:css
+  - npm run lint:js
