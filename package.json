@@ -1,6 +1,6 @@
 {
   "name": "oc-partial-example",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "List of partials` examples for development under OctoberCMS",
   "main": "index.js",
   "scripts": {
