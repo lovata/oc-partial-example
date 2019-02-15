@@ -1,0 +1,14 @@
+.form__input-file {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form__input-file-field {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin-left: -1px;
+}
