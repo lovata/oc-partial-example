@@ -1,0 +1,10 @@
+dist: trusty
+
+addons:
+  sonarcloud:
+    organization: "lovata"
+    token:
+      secure: "trgRobAC6gdkSdWhT1ZmDsa2WlW0+53Y07Tdd4QlVyZTFv6qJRXqUiuUYiVnp4Ff64iLdpuCdsaRcqAS2141r7ae6bfqWM4owkSsBSgt/0d7dcVZE36xHwlhdc8iblCxc4F/gRJe0boWrPNzPEYfc7dOpQHY/T5wiSFz2SYE26POU2QuyzoZbIjPciGY6alNNaXWUdimBs0A64JfZArbS3Xqlm5WSY/wszSm4SgXWiQU4IuLqDwo0EFP223yTiW03c19XFfMlaOidwwX++USOipcT2DtHG/+4KJVfNZz2hr4rsb6Lcmk1Pkjp2tZaj5UdwsQhlIVJ7w7Z5tSklcycebAq+VA4zPX7K0uLt0LFPjIxrApmCRJRrwhithMOXCzTF7F1UDD8stadVaJm0ppV+wL/8CyEjw3jenk7mTVgt+CwHPfLLqiALgbCeXv5CeRSxJEP5muRd4aBwPKz7qTLEOxIPYUw5YG/gc4n7h5VkvNP6PgTDZ74QWNor9IDp76uzNv/r1exu192MddSgA84m+8Lu9g/1aIZ+5KfqQ8iYo8HlL+x7g9EliYkVMmF8wj6Xqtjo08gEKyJRSBs2xGDbjCvhQIgjXBjOR+ZBUwQIi0+lVSGnBZrYJKgCa7OYaZ86vcGKsrQ/F7utGjTbfhPqjz8aLGCzKwpdlKflrYjTY="
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
