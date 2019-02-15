@@ -5,8 +5,8 @@ This repository contains some examples of implementation often found components 
 ## Contents
 
 1. Form
-   +  [Input](component/form/input/input.md)
-   +  [Radio/Checkbox](component/form/radio/radio.md)
-   +  [Button](component/form/button/button.md)
-   +  [Validation](component/form/validation/validation.md)
+   +  [Input](components/form/input/input.md)
+   +  [Radio/Checkbox](components/form/radio/radio.md)
+   +  [Button](components/form/button/button.md)
+   +  [Validation](components/form/validation/validation.md)
   
