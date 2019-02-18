@@ -29,4 +29,5 @@ This repository contains some examples of implementation often found components 
 6. Review
    - [Rating](/components/review/rating)
    - [Review List](/components/review/review-list)
-  
+7. Product
+   - [Product-card](/components/product/product-card)
