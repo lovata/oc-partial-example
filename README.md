@@ -22,7 +22,11 @@ This repository contains some examples of implementation often found components 
    - [Tab](/components/ui-components/tab/tab-static)
    - [Gallery with thumbs](/components/ui-components/thumbs-gallery)
    - [Instagram api(tag-tray)](/components/ui-components/instagram-api/tag-tray)
+   - [Custom scroll](/components/ui-components/native-custom-scroll)
 5. Contacts
    - [Google map](/components/map/gMap)
    - [Contact list(+schema.org)](/components/contact/contact)
+6. Review
+   - [Rating](/components/review/rating)
+   - [Review List](/components/review/review-list)
   
