@@ -1,0 +1,37 @@
+
+
+<li class="product-card  {{ wrapperClass }}" itemscope itemtype="http://schema.org/Product">
+    <a href="#" class="product-card__url" itemprop="url">
+        <div class="product-card__img-wrap">
+            {% if productImgPath|length > 0 %}
+                <img class="product-card__img js-lazy-load" src="" data-src="{{ i.productImgPath|theme }}" itemprop="image" alt="{{ i.productImgAlt }}">
+                <div class="product-card__img-preloader"></div>
+            {% else %}
+                <img class="product-card__img product-card__img_nophoto" src="{{ 'assets/img/nophoto.svg'|theme }}" itemprop="image" alt="Нет изображения товараы">
+            {% endif %}
+        </div>
+        <span class="product-card__category" itemprop="description">Case for iPhone</span>
+        <h3 class="product-card__title" itemprop="name" title="Red case">Red case</h3>
+        <div class="product-card__price" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+            {% if saleValue != false %}
+                <span class="product-card__price-text product-card__price-text_old">
+                    <span class="product-card__price-value">22</span>
+                    <span class="product-card__price-currency">$</span>
+                </span>
+                <span class="product-card__price-text product-card__price-text_sale">
+                    <span class="product-card__price-value" itemprop="price">11</span>
+                    <span class="product-card__price-currency" itemprop="priceCurrency" content="USD">$</span>
+                </span>
+            {% else %}
+            <span class="product-card__price-text product-card__price-text_current">
+                <span class="product-card__price-value" itemprop="price">11</span>
+                <span class="product-card__price-currency" itemprop="priceCurrency" content="USD">$</span>
+            </span>
+            {% endif %}
+        </div>
+    </a>
+    <div class="product-card__hover-decorator"></div>
+    <form class="product-card__hover-content">
+       <button type="submit" class="product-card__add">Add to cart</button>
+    </form>
+</li>
