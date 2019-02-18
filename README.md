@@ -11,6 +11,7 @@ This repository contains some examples of implementation often found components 
    - [Validation](/components/form/validation)
    - [Input[type=file]](/components/form/input-file)
    - [Select](/components/form/select)
+   - [Google reCaptcha](/components/form/captcha)
 2. Navigation
    - [Breadcrumbs(+schema.org)](/components/navigation/breadcrumbs)
    - [Pagination](/components/navigation/pagination)
@@ -20,6 +21,8 @@ This repository contains some examples of implementation often found components 
 4. UI components
    - [Tab](/components/ui-components/tab/tab-static)
    - [Gallery with thumbs](/components/ui-components/thumbs-gallery)
-   - 
-
+   - [Instagram api(tag-tray)](/components/ui-components/instagram-api/tag-tray)
+5. Contacts
+   - [Google map](/components/map/gMap)
+   - [Contact list(+schema.org)](/components/contact/contact)
   

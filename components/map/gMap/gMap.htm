@@ -1,0 +1,9 @@
+{% set apiKey = AIzaSyB7brwz7UzL1JdGloCmlR0FioXqwelzaCs %}
+{% if apiKey|length > 0 %}
+    <div class="map contact__map"
+        data-api-key="AIzaSyB7brwz7UzL1JdGloCmlR0FioXqwelzaCs"
+        data-coordinates="53.921194,27.566736"
+        data-marker-path={{ 'assets/img/icon/marker.png'|theme }}>
+        {% partial 'content/contact/contact-popup' %}
+    </div>
+{% endif %}

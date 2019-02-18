@@ -1,0 +1,13 @@
+{% set popup = {
+    title:'Main Office',
+    address:'339 Greenwich St, New York, NY 10013',
+    tel:'+1 (212) 966-6457',
+    working_hours:'Mon-Fri, 8:30 am – 7:30 pm',
+} %}
+
+<div class="map-popup contact__popup">
+    <h4 class="map-popup__title">{{ popup.title }}</h4>
+    <b class="map-popup__address">{{ popup.address }}</b>
+    <span class="map-popup__tel">{{ popup.tel }}</span>
+    <span class="map-popup__working-hours">{{ popup.working_hours }}</span>
+</div>
