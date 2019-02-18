@@ -17,5 +17,9 @@ This repository contains some examples of implementation often found components 
 3. Article
    - [Article card(+schema.org)](/components/article/article-card)
    - [Article page(+schema.org)](/components/article/article-page)
+4. UI components
+   - [Tab](/components/ui-components/tab/tab-static)
+   - [Gallery with thumbs](/components/ui-components/thumbs-gallery)
+   - 
 
   

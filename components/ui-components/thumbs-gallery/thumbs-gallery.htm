@@ -1,0 +1,24 @@
+<section class="product-slider {{ wrapperClass }}">
+    <div class="product-nav-slider product-nav-slider_visually-hidden swiper-container">
+        <ul class="product-nav-slider__wrapper swiper-wrapper">
+            {% for i  in 0..5 %}
+                <li class="product-nav-slider__slide swiper-slide">
+                    <img src="http://lorempixel.com/20/200/cats" alt="Image description" class="product-nav-slider__img">
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="product-slider__container swiper-container">
+        <ul class="product-slider__wrapper swiper-wrapper">
+            {% for i  in 0..5 %}
+            <li class="product-slider__slide swiper-slide">
+                <a href="#" class="product-slider__link">
+                    <img class="product-slider__img swiper-lazy" data-src="http://lorempixel.com/400/400/cats" alt="Image description">
+                </a>
+                <div class="product-slider__slide-preloader"></div>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="product-slider__pagination"></div>
+    </div>
+</section>
