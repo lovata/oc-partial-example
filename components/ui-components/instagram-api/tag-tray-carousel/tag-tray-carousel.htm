@@ -1,0 +1,23 @@
+{% set galleryKey = 1547546389 %}
+
+{% if galleryKey|length > 0 %}
+    <section class="tag-tray">
+        <h2 class="tag-tray__heading">
+            <img class="tag-tray__img" src="http://lorempixel.com/100/100/cats" alt="logo">
+        </h2>
+        <p class="tag-tray__descr">
+            Публикуй фото в Instagram и Facebook с хэштегом #hashtag и находи свои фотографии в галерее!
+        </p>
+        <div class="tag-tray__container">
+            <div class="tagtray-gallery"
+                data-gallery-code="{{ galleryKey }}"
+                data-gallery-type="carousel"
+                data-carousel-max-slides="20"
+                data-carousel-slide-width="220"
+                data-carousel-slide-margin="0"
+                data-overlay-type="none">
+            </div>
+        </div>
+    </section>
+{% endif %}
+
