@@ -1,3 +1,4 @@
+
 export default new class TagTray {
   constructor() {
     this.tagTraySelector = 'tagtray-gallery';

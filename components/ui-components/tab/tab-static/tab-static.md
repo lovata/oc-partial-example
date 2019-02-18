@@ -1,4 +1,4 @@
-# Pagination
+# Tab with static content
 
 ### The Rules
 
