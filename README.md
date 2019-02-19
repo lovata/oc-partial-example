@@ -34,3 +34,5 @@ This repository contains some examples of implementation often found components 
    - [Product-card](/components/product/product-card)
 8. Map
    - [Google Map](/components/map/gMap)
+9. Search
+   - [Search](/components/search/search)

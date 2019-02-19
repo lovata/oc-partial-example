@@ -42,9 +42,7 @@ export default new class Helper {
 
   checkOverlay() {
     const overlay = this.getOverlay();
-    const overlayState = !!overlay;
-
-    return overlayState;
+    return !!overlay;
   }
 
   overlayController(boolean) {
@@ -82,9 +80,7 @@ export default new class Helper {
   }
 
   getOverlay() {
-    const overlay = document.querySelector(`.${this.overlaySelector}`);
-
-    return overlay;
+    return document.querySelector(`.${this.overlaySelector}`);
   }
 
   overlayClickHandler(triggerTarget) {

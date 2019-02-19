@@ -54,7 +54,7 @@ export default new class ContactMap {
         center,
         zoom: 14,
       });
-      const marker = new googleMaps.Marker({ position: center, map: map, icon: markerPath});
+      const marker = new googleMaps.Marker({ position: center, map, icon: markerPath });
 
       /* TODO: set correct path to popup partial */
 
@@ -62,7 +62,10 @@ export default new class ContactMap {
         update: { 'content/contact/contact-popup': `.${this.mapSelector}` },
         success: (res) => {
           const content = res['content/contact/contact-popup'];
+
+          /* eslint-disable new-cap  */
           const infoWindow = new googleMaps.infoWindow({ content, maxWidth: this.maxWidth });
+          /* eslint-enable */
 
           infoWindow.open(map, marker);
           marker.addListener('click', () => {

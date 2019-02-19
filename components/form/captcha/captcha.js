@@ -49,9 +49,7 @@ export default new class Captcha {
 
 
   findErrorNode() {
-    const error = document.querySelector(`.${this.captchaErrorSelector}`);
-
-    return error;
+    return document.querySelector(`.${this.captchaErrorSelector}`);
   }
 
   showError() {
