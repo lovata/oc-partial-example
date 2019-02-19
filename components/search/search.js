@@ -51,7 +51,6 @@ export default new class Search {
         if (input.value.trim().length < 3) return;
         this.showResult(container);
       }, this.delay);
-
     });
 
     window.addEventListener('resize', () => {
