@@ -1,0 +1,16 @@
+<button class="search__close-btn" aria-label="Close"></button>
+<h3 class="search__heading">
+    Поиск
+</h3>
+{% partial 'form/input/input'
+    labelText='Search field'
+    wrapperClass='search__input'
+    placeholder='Search'
+    id='search-input'
+    inputClass='search__input-field'
+    labelClass='search__input-label'
+%}
+<img class="search__preloader" src="{{ 'path/to/preloader'|theme }}">
+<div class="search__result-wrapper">
+
+</div>
