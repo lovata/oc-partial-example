@@ -1,0 +1,5 @@
+<ul class="review-list">
+    {% for i in 0..4 %}
+        {% partial 'review/review-list/review-card' rating=loop.index unique_id=random(666)~'q12' %}
+    {% endfor %}
+</ul>

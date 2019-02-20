@@ -1,0 +1,18 @@
+{# TODO: set correct text for aria-label #}
+
+{# Id in linearGradient directive and fill pair must be unique on page #}
+{# First offset in linearGradient directive responsible for yellow fill, 2nd - white fill #}
+
+<div class="rating {{ wrapperClass }}" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+    <span class="rating__value" aria-label="Rating {{ rating }} from {{ maxRating }} based on {{ raviewCount }} reviews">
+        {% partial 'rating/rating-image' maxRating='5' rating='3.6' unique_id='product' %}
+    </span>
+    <a class="rating__review-count-wrap" href="#see-all-reviews" aria-label="See all reviews">
+        <span class="rating__review-count" itemProp="reviewCount" aria-hidden="true">{{ raviewCount }}</span>
+        <span class="rating__review-count-text" aria-hidden="true">reviews</span>
+    </a>
+    {# TODO: remove bestRating and  worstRating directives if they are not needed #}
+    <meta itemProp="bestRating" content="5">
+    <meta itemProp="worstRating" content="3">
+    <meta itemProp="ratingValue" content="3.6">
+</div>

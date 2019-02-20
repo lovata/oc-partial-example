@@ -1,0 +1,19 @@
+<section class="tab {{ wrapperClass }}">
+    <ul class="tab__tablist" role="tablist">
+        {% for tab in arTab %}
+            {% set defaultActiveTab = loop.index == 1 ? 'tab__link_active' : '' %}
+            {% set isSelected  ==  loop.index == 1 ? 'aria-selected="true"'  %}
+            <li class="tab__tabitem" role="presentation">
+                <a class="tab__link {{ defaultActiveTab }}"  href="#{{ tab.id }}"  aria-controls="{{ tab.id }}" role="tab" {{ isSelected }}>
+                    {{ tab.tabName }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    {% for tab in arTab %}
+        {% set defaultInvisionSection = loop.index != 1 ? 'tab__content_visually-hidden' : '' %}
+        <div class="tab__content {{ defaultInvisionSection }} wysiwyg" id="{{ tab.id }}" role="tabpanel" aria-labelledby="This tab short description">
+            {{ tab.text }}
+        </div>
+    {% endfor %}
+</section>

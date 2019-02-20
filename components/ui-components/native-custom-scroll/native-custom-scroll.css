@@ -1,0 +1,20 @@
+.webkit-scroll {
+  overflow: auto;
+  scrollbar-color: #c9c2c2 #ffffff; /* Firefox styling */
+  appearance: none;
+
+  &::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #c9c2c2;
+  }
+}

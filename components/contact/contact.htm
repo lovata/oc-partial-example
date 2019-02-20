@@ -1,0 +1,34 @@
+{% set companyName = 'Lowbor' %}
+<ul class="contact__list" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="{{ companyName }}">
+    <link itemprop="url" href="{{ 'index'|page }}">
+    <li class="contact__item" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <b class="contact__item-heading">Address</b>
+        <span class="contact__item-content">
+            <span itemprop="streetAddress">339 Greenwich Street,</span>
+            <span itemprop="addressLocality">New York,</span>
+            <span itemprop="postalCode">NY 10013, US</span>
+        </span>
+        <span class="contact__item-hint">
+            (Mon-Fri, 8:00 am – 8:30 pm)
+        </span>
+    </li>
+    <li class="contact__item">
+        <b class="contact__item-heading">Phone</b>
+        <a href="tel: +1212966-6457" class="contact__item-content" itemprop="telephone">
+            +1 (212) 966-6457
+        </a>
+        <span class="contact__item-hint">
+            (Mon-Fri, 8:00 am – 8:30 pm)
+        </span>
+    </li>
+    <li class="contact__item">
+        <b class="contact__item-heading">E-mail</b>
+        <a href="mailto: support@lowbor.com" class="contact__item-content">
+            <span itemprop="email">support@lowbor.com</span>
+        </a>
+        <span class="contact__item-hint">
+            (We reply within 24h)
+        </span>
+    </li>
+</ul>

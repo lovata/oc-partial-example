@@ -1,0 +1,11 @@
+/* stylelint-disable  selector-no-qualifying-type, selector-max-type */
+
+body._noscroll {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding-right: var(--body-padding, 0);
+}
+
+/* stylelint-enable */

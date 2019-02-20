@@ -1,0 +1,19 @@
+{% set galleryKey = 1547546389 %}
+{% if galleryKey|length > 0 %}
+    <div class="photo-gallery">
+        <h2 class="photo-gallery__heading">Галерея фотографий</h2>
+        <p class="photo-gallery__descr">Не понравилось качество чехла или печати?
+            Чехол пришел поврежденным? Потерялась посылка на почте? Обязательно сообщите нам.
+            Если вы остались недовольны качеством обслуживания или у вас есть предложения по улучшению нашего сервиса, пишите нам на почту info@caseme.by или звоните по номеру +375(33)651-77-33
+        </p>
+        <div class="tag-tray__container photo-gallery__container">
+            <div class="tagtray-gallery"
+                data-gallery-code="{{ galleryKey }}"
+                data-gallery-type="passive"
+                data-overlay-type="none"
+                data-page-size="20"
+            >
+            </div>
+        </div>
+    </div>
+{% endif %}

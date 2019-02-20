@@ -1,0 +1,17 @@
+.tag-tray__descr {
+  padding: 0;
+  margin: 0;
+}
+
+.tag-tray__container {
+  min-height: 220px;
+}
+
+/* stylelint-disable declaration-no-important */
+
+.ttbx-wrapper {
+  margin: 0 !important; /* This directive need for overlap lib`s styles */
+  border: none !important; /* This directive need for overlap lib`s styles */
+}
+
+/* stylelint-enable */

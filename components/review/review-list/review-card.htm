@@ -1,0 +1,22 @@
+{% set productName = 'Chebureck' %}
+{% set rating = 2 %}
+
+<li class="review-card" itemscope itemtype="http://schema.org/Review">
+    <div class="review-card__col">
+        <meta itemprop="itemReviewed" content="{{ productName }}">
+        <b class="review-card__author" itemprop="author">Mattew Anderson</b>
+        <span class="review-card__rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            <meta itemprop="ratingValue" content={{ rating }}>
+            {% partial 'common/rating/rating-image' maxRating='5' rating=rating unique_id=unique_id %}
+        </span>
+    </div>
+    <div class="review-card__col">
+        <p itemprop="reviewBody" class="review-card__text">
+            Really nice trainers, were delivered extremely quickly.
+            They fit really well (size 11) and are comfortable.
+        </p>
+        <time class="review-card__time" itemprop="datePublished" datetime="2018-06-26">June 26, 2018</time>
+    </div>
+</li>
+
+
